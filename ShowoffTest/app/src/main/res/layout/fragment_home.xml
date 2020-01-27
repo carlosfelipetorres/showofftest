@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+                name="vm"
+                type="com.carlostorres.showofftest.home.HomeViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".home.HomeFragment">
+
+        <ImageView
+                android:layout_width="@dimen/dimen40"
+                android:layout_height="0dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_margin="@dimen/dimen5"
+                app:layout_constraintBottom_toBottomOf="@id/logout_button"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/logout_button" />
+
+        <TextView
+                android:id="@+id/logout_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen5"
+                android:background="@drawable/squared_button_colored_purple"
+                android:text="Log Out"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimenSp12"
+                android:padding="@dimen/dimen10"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dimen5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logout_button" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

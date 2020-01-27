@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Showoff Test</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_generic">Error, try later</string>
+
+    <string name="facebook_app_id">200644537740498</string> <string name="fb_login_protocol_scheme">fb200644537740498</string>
+
+</resources>
